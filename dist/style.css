@@ -1,0 +1,289 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Bruno Ace SC;
+  transition: 1s ease-in-out;
+}
+
+html {
+  font: 5vmin/1.3 Serif;
+  background: #123;
+}
+
+body,
+head {
+  display: block;
+  font-size: 52px;
+  color: transparent;
+}
+
+head::before,
+head::after,
+body::before,
+body::after {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  width: 3em;
+  height: 3em;
+  content: ".";
+  mix-blend-mode: screen;
+  animation: 44s -27s move infinite ease-in-out alternate;
+}
+
+body::before {
+  text-shadow: -0.4301689708em -0.4014592519em 7px rgba(167, 0, 255, 0.9), 0.4443906373em 1.4625395033em 7px rgba(255, 191, 0, 0.9), 0.0190690247em 2.2561548976em 7px rgba(0, 255, 225, 0.9), 1.3696702918em 1.9632228193em 7px rgba(255, 163, 0, 0.9), 0.5915941879em -0.0000954538em 7px rgba(255, 244, 0, 0.9), 2.4201567109em 1.0789189368em 7px rgba(143, 0, 255, 0.9), 0.3093948378em 0.754738423em 7px rgba(255, 0, 219, 0.9), 2.0896060792em 1.2917963108em 7px rgba(255, 0, 121, 0.9), 0.1147491736em 2.051629075em 7px rgba(0, 255, 220, 0.9), 1.1905946263em 2.0697719545em 7px rgba(0, 255, 106, 0.9), 0.5389096359em 0.1432817113em 7px rgba(0, 255, 170, 0.9), 0.6055847756em 1.7767036897em 7px rgba(255, 113, 0, 0.9), 1.3135793058em 1.5924192295em 7px rgba(0, 255, 69, 0.9), 1.9248757763em 1.1428859709em 7px rgba(0, 144, 255, 0.9), 1.131050438em 1.3333093606em 7px rgba(95, 0, 255, 0.9), 0.3605039486em 1.7875098672em 7px rgba(196, 255, 0, 0.9), 1.0754206578em 2.3768069551em 7px rgba(33, 255, 0, 0.9), 0.9703536442em 2.0390666419em 7px rgba(200, 0, 255, 0.9), -0.4778306186em -0.1070056235em 7px rgba(0, 255, 112, 0.9), 1.6730527865em 1.084346658em 7px rgba(0, 178, 255, 0.9), 2.11770147em -0.3610267597em 7px rgba(255, 141, 0, 0.9), 0.8500546582em 0.7291698628em 7px rgba(255, 140, 0, 0.9), 0.0959343798em 0.1537022848em 7px rgba(0, 255, 27, 0.9), 1.0259519539em 0.2447707125em 7px rgba(0, 255, 154, 0.9), 2.3800089285em 1.5800395622em 7px rgba(255, 0, 116, 0.9), 0.0579983403em 0.8790097404em 7px rgba(0, 255, 207, 0.9), 1.7079500059em 2.205709148em 7px rgba(225, 255, 0, 0.9), 1.2408303141em 0.1711443101em 7px rgba(0, 255, 210, 0.9), 2.3419301636em 0.4014746334em 7px rgba(202, 255, 0, 0.9), 2.3937096132em 0.6170158157em 7px rgba(0, 61, 255, 0.9), -0.2990564359em -0.0829263067em 7px rgba(36, 0, 255, 0.9), 2.417213233em -0.2367038603em 7px rgba(0, 206, 255, 0.9), -0.0497562699em 0.8362031678em 7px rgba(255, 45, 0, 0.9), 1.1939572912em 2.3222136755em 7px rgba(0, 255, 155, 0.9), 0.320582813em -0.1676466916em 7px rgba(0, 255, 253, 0.9), 1.598263794em 1.5128220572em 7px rgba(255, 167, 0, 0.9), 0.3120541425em 0.2222578717em 7px rgba(141, 0, 255, 0.9), 2.3319474658em 0.5623212139em 7px rgba(255, 0, 245, 0.9), 2.400790266em 0.9720311274em 7px rgba(255, 61, 0, 0.9), 0.9281515084em 2.2947418506em 7px rgba(0, 126, 255, 0.9), 2.4189241568em 0.8878693956em 7px rgba(255, 80, 0, 0.9);
+  animation-duration: 44s;
+  animation-delay: -27s;
+}
+
+body::after {
+  text-shadow: 1.4024088917em 2.2148904587em 7px rgba(255, 193, 0, 0.9), 1.8693329288em 0.5374808426em 7px rgba(255, 19, 0, 0.9), 2.1794644878em 0.8979864951em 7px rgba(0, 255, 135, 0.9), 0.020500217em 1.6311130268em 7px rgba(0, 18, 255, 0.9), 0.8871370762em -0.4776411727em 7px rgba(0, 255, 181, 0.9), 0.6885022249em 0.8054445298em 7px rgba(80, 0, 255, 0.9), 0.1012328474em 1.9463685838em 7px rgba(168, 0, 255, 0.9), -0.3362739888em -0.2308965207em 7px rgba(0, 255, 136, 0.9), 1.2025947287em 1.3412454282em 7px rgba(124, 255, 0, 0.9), 2.2696465951em 2.4685453125em 7px rgba(255, 160, 0, 0.9), 0.1293112592em 1.591817838em 7px rgba(255, 0, 120, 0.9), 0.7431531671em 1.0693004189em 7px rgba(255, 0, 152, 0.9), 1.944635285em 1.8311636238em 7px rgba(0, 255, 34, 0.9), 0.6939992793em 1.6560420521em 7px rgba(0, 63, 255, 0.9), -0.3254865058em 1.6617421227em 7px rgba(0, 255, 230, 0.9), 1.3972088279em 1.6186209083em 7px rgba(0, 3, 255, 0.9), 2.0246913865em -0.2206792535em 7px rgba(255, 247, 0, 0.9), 1.5140523611em 2.3658396463em 7px rgba(0, 160, 255, 0.9), 0.0858231634em -0.2866278867em 7px rgba(255, 0, 160, 0.9), 2.2333870357em 0.7610049502em 7px rgba(255, 33, 0, 0.9), -0.359898426em 0.206151318em 7px rgba(0, 255, 245, 0.9), 0.2620635076em 1.816478007em 7px rgba(0, 213, 255, 0.9), 0.207655607em 0.6972668879em 7px rgba(0, 255, 121, 0.9), 0.6782831268em 2.2926970325em 7px rgba(104, 255, 0, 0.9), 1.4490490127em 1.5388429554em 7px rgba(103, 0, 255, 0.9), 0.2680943045em 1.098450105em 7px rgba(255, 0, 201, 0.9), 1.1946399603em 0.1884985399em 7px rgba(255, 0, 253, 0.9), 2.3222804512em 0.0628083051em 7px rgba(255, 0, 215, 0.9), 1.9303550023em 2.3238718112em 7px rgba(0, 114, 255, 0.9), 2.018431435em 1.2675442131em 7px rgba(255, 0, 94, 0.9), 0.7846944489em 2.1295602883em 7px rgba(0, 215, 255, 0.9), 0.0273123824em 2.0060016506em 7px rgba(255, 129, 0, 0.9), -0.0411259279em -0.2371681415em 7px rgba(255, 222, 0, 0.9), 1.4119159809em 0.6931684816em 7px rgba(29, 0, 255, 0.9), 1.4777648631em 0.3909673556em 7px rgba(0, 92, 255, 0.9), 0.8005340311em 1.7838956888em 7px rgba(144, 0, 255, 0.9), 0.572588691em 0.6772751769em 7px rgba(135, 255, 0, 0.9), 0.3731770743em -0.1359904699em 7px rgba(255, 102, 0, 0.9), 0.9255002023em 1.190829863em 7px rgba(0, 255, 183, 0.9), 2.2701879961em 1.5597195108em 7px rgba(255, 0, 152, 0.9), 0.5106202804em 2.2542747342em 7px rgba(0, 255, 34, 0.9);
+  animation-duration: 43s;
+  animation-delay: -32s;
+}
+
+head::before {
+  text-shadow: 2.0796830009em 0.3717335156em 7px rgba(0, 255, 32, 0.9), 2.3763415446em 1.9543129784em 7px rgba(0, 243, 255, 0.9), 0.059163152em 1.9826013412em 7px rgba(0, 247, 255, 0.9), 1.4801561752em 0.251693158em 7px rgba(0, 255, 183, 0.9), 2.0551276396em 2.1521983817em 7px rgba(0, 208, 255, 0.9), 1.1735042047em 1.2206358705em 7px rgba(75, 255, 0, 0.9), -0.1911326344em 0.813089419em 7px rgba(177, 0, 255, 0.9), -0.4046171828em -0.2695282124em 7px rgba(255, 224, 0, 0.9), -0.4568227973em 1.8109011246em 7px rgba(97, 0, 255, 0.9), 0.4123005375em 0.84263105em 7px rgba(124, 255, 0, 0.9), 0.4986398469em -0.3084920562em 7px rgba(166, 0, 255, 0.9), 2.4846517414em 2.4575380451em 7px rgba(0, 54, 255, 0.9), -0.249116796em -0.1500465893em 7px rgba(17, 0, 255, 0.9), -0.0923955777em 0.7221964249em 7px rgba(0, 246, 255, 0.9), 0.47014954em 0.8089036004em 7px rgba(0, 255, 208, 0.9), 2.4066912899em 0.4262940201em 7px rgba(0, 156, 255, 0.9), 2.2301773608em -0.0939134282em 7px rgba(63, 255, 0, 0.9), 1.6888791883em 1.2015205787em 7px rgba(255, 20, 0, 0.9), 1.728385749em 1.6577717141em 7px rgba(255, 29, 0, 0.9), 1.9168235476em 0.1788402615em 7px rgba(0, 97, 255, 0.9), 1.1958513975em 1.6189750704em 7px rgba(0, 255, 61, 0.9), 0.9903381753em 2.0458190351em 7px rgba(65, 255, 0, 0.9), 0.8061048931em 2.2985892758em 7px rgba(0, 255, 183, 0.9), 0.0594554058em 0.1326231048em 7px rgba(0, 255, 100, 0.9), 2.0616650118em 0.9149699568em 7px rgba(255, 209, 0, 0.9), 1.2476186062em 1.2715683152em 7px rgba(255, 154, 0, 0.9), 2.1917975254em 1.2246548298em 7px rgba(0, 239, 255, 0.9), 1.2439606859em 1.9457296527em 7px rgba(0, 255, 86, 0.9), 1.3604571267em 0.0804328205em 7px rgba(0, 255, 172, 0.9), 0.4452873737em 0.3299274655em 7px rgba(255, 0, 198, 0.9), 1.5744516231em 2.2744553729em 7px rgba(60, 255, 0, 0.9), 1.0320785565em 0.1432520138em 7px rgba(255, 0, 117, 0.9), 2.1315475321em 0.4821485418em 7px rgba(255, 245, 0, 0.9), 0.7861932837em 0.2231065527em 7px rgba(6, 0, 255, 0.9), -0.1071812926em 0.6047524797em 7px rgba(31, 0, 255, 0.9), 1.8518485629em 0.5829176538em 7px rgba(153, 255, 0, 0.9), -0.1381251309em 0.1296382182em 7px rgba(255, 0, 28, 0.9), 2.1678692735em 1.5544922534em 7px rgba(0, 69, 255, 0.9), 1.519332031em -0.273125842em 7px rgba(0, 216, 255, 0.9), 1.9738079099em 2.0335018225em 7px rgba(238, 255, 0, 0.9), -0.3309153386em 1.684837198em 7px rgba(255, 245, 0, 0.9);
+  animation-duration: 42s;
+  animation-delay: -23s;
+}
+
+head::after {
+  text-shadow: 0.8977556817em -0.2910083882em 7px rgba(0, 255, 246, 0.9), 0.3804848705em -0.4009466509em 7px rgba(0, 255, 224, 0.9), 0.8844407861em 0.8199166604em 7px rgba(255, 0, 170, 0.9), 1.9945077696em 2.0520381682em 7px rgba(10, 0, 255, 0.9), 2.2387584245em 0.7469468781em 7px rgba(255, 50, 0, 0.9), 1.8076375173em 1.907731082em 7px rgba(0, 82, 255, 0.9), -0.158000362em 1.2075740329em 7px rgba(0, 49, 255, 0.9), 0.3292447772em 0.0614610174em 7px rgba(255, 135, 0, 0.9), -0.2251661372em 1.0841278529em 7px rgba(0, 255, 120, 0.9), 0.0680621388em -0.1109979859em 7px rgba(167, 0, 255, 0.9), -0.0975267507em 0.1067556763em 7px rgba(105, 0, 255, 0.9), 0.023875703em 0.0651144843em 7px rgba(255, 0, 24, 0.9), -0.0494640129em -0.0564370262em 7px rgba(114, 0, 255, 0.9), 1.3580430843em 1.1915997389em 7px rgba(241, 0, 255, 0.9), 1.1861109017em -0.0869818332em 7px rgba(0, 255, 241, 0.9), 1.2999785343em 1.7734572229em 7px rgba(0, 222, 255, 0.9), 1.353710359em 2.0873849796em 7px rgba(0, 136, 255, 0.9), 0.326773061em 2.3602662553em 7px rgba(104, 0, 255, 0.9), 0.2556401608em 1.0187151999em 7px rgba(105, 0, 255, 0.9), 2.2387381178em 1.5552211929em 7px rgba(255, 117, 0, 0.9), 0.609992105em 1.8706202014em 7px rgba(180, 255, 0, 0.9), 1.6535260529em -0.242603213em 7px rgba(56, 255, 0, 0.9), 0.7022044352em 1.6390558278em 7px rgba(255, 39, 0, 0.9), -0.3964507391em 1.6845042847em 7px rgba(206, 255, 0, 0.9), 2.4894555095em 0.6927535498em 7px rgba(255, 0, 138, 0.9), 1.3561651978em 2.351955124em 7px rgba(0, 255, 25, 0.9), 1.7813637524em 0.2166210612em 7px rgba(255, 9, 0, 0.9), 0.2967396374em 1.7627732208em 7px rgba(0, 255, 118, 0.9), 0.1575426685em 1.0291140647em 7px rgba(105, 0, 255, 0.9), 1.2575058952em 2.3936424989em 7px rgba(45, 0, 255, 0.9), -0.3917648897em 0.3016858091em 7px rgba(182, 0, 255, 0.9), 1.1068266693em 0.0471718665em 7px rgba(0, 225, 255, 0.9), 2.2984431747em 0.3441648961em 7px rgba(0, 122, 255, 0.9), 0.64740923em 0.3507930328em 7px rgba(6, 255, 0, 0.9), 1.8531101329em 1.7450250877em 7px rgba(212, 255, 0, 0.9), 0.4466058743em -0.4237171155em 7px rgba(255, 127, 0, 0.9), -0.3295251915em -0.4969154206em 7px rgba(0, 56, 255, 0.9), 0.4476208488em -0.0783510844em 7px rgba(255, 29, 0, 0.9), -0.420145941em 0.6076126199em 7px rgba(83, 0, 255, 0.9), 0.2864521663em 0.416510359em 7px rgba(0, 123, 255, 0.9), 0.2354960092em 1.8131533009em 7px rgba(224, 255, 0, 0.9);
+  animation-duration: 41s;
+  animation-delay: -19s;
+}
+
+@keyframes move {
+  from {
+    transform: rotate(0deg) scale(12) translateX(-20px);
+  }
+  to {
+    transform: rotate(360deg) scale(18) translateX(20px);
+  }
+}
+body {
+  display: flex;
+  flex-direction: column;
+  padding: 30px;
+  width: 100%;
+  height: 100vh;
+  gap: 60px;
+}
+body .body-wrapper {
+  color: white;
+  z-index: 10;
+  display: flex;
+  flex-direction: column;
+  gap: 5vh;
+}
+body .body-wrapper .btn {
+  padding: 15px;
+  border: none;
+  outline: none;
+  border-radius: 15%;
+  background-color: #7cff7c;
+  cursor: pointer;
+  cursor: pointer;
+  transition: 0.1s ease-in-out;
+}
+body .body-wrapper .btn:hover {
+  border-radius: 30%;
+}
+body .body-wrapper .title {
+  font-size: 60px;
+  text-align: center;
+  font-weight: 900;
+}
+body .body-wrapper .subtitle {
+  text-align: center;
+  font-size: 25px;
+}
+body .body-wrapper .triangle {
+  width: 0;
+  height: 0;
+}
+body .body-wrapper .main-wrapper .containers {
+  display: flex;
+  flex-direction: column-reverse;
+  justify-content: space-around;
+  gap: 5vh;
+}
+body .body-wrapper .main-wrapper .containers .show-container {
+  -webkit-box-shadow: 2px 6px 22px 2px rgba(255, 255, 255, 0.76);
+  -moz-box-shadow: 2px 6px 22px 2px rgba(255, 255, 255, 0.76);
+  box-shadow: 2px 6px 22px 2px rgba(255, 255, 255, 0.76);
+  border-radius: 20px;
+  padding: 20px;
+  display: flex;
+  position: relative;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  gap: 40px;
+  width: 100%;
+  -webkit-box-shadow: 2px 6px 59px -3px rgba(255, 255, 255, 0.76);
+  -moz-box-shadow: 2px 6px 59px -3px rgba(255, 255, 255, 0.76);
+  box-shadow: 2px 6px 59px -3px rgba(255, 255, 255, 0.76);
+}
+body .body-wrapper .main-wrapper .containers .show-container .show-wrapper {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  flex-wrap: wrap;
+  row-gap: 3vh;
+  column-gap: 3vw;
+  padding: 50px;
+}
+body .body-wrapper .main-wrapper .containers .show-container .show-wrapper .animation-item {
+  transition: 10s;
+  cursor: pointer;
+}
+body .body-wrapper .main-wrapper .containers .show-container .clear-container {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  z-index: 9999;
+  background-color: yellow;
+}
+body .body-wrapper .main-wrapper .containers .show-container .btn-reset {
+  position: absolute;
+  top: 10px;
+  left: 10px;
+  z-index: 9999;
+  background-color: #5f29ff;
+}
+body .body-wrapper .main-wrapper .containers .show-container .show-title {
+  font-size: 20px;
+  position: absolute;
+  font-style: italic;
+  text-shadow: 2px 4px 10px rgba(251, 227, 245, 0.47);
+}
+body .body-wrapper .main-wrapper .containers .show-container .show-title {
+  animation-duration: 3s;
+  animation-name: showTitleAnim;
+  animation-iteration-count: infinite;
+}
+@keyframes showTitleAnim {
+  0% {
+    top: 20%;
+  }
+  40% {
+    top: 60%;
+  }
+  100% {
+    top: 20%;
+  }
+}
+body .body-wrapper .main-wrapper .containers .show-container .time-line {
+  display: flex;
+  align-items: center;
+  width: 60%;
+  position: relative;
+  z-index: 9999;
+  justify-content: space-evenly;
+}
+body .body-wrapper .main-wrapper .containers .show-container .time-line img {
+  width: 5%;
+  cursor: pointer;
+  transition: 0.2s ease-in-out;
+}
+body .body-wrapper .main-wrapper .containers .show-container .time-line img:hover {
+  transform: scale(1.1);
+}
+body .body-wrapper .main-wrapper .containers .show-container .time-line .line {
+  height: 2px;
+  border-bottom: 1px solid #fbfbfb;
+  width: 80%;
+  position: relative;
+}
+body .body-wrapper .main-wrapper .containers .show-container .time-line .line .loading-line {
+  top: 0px;
+  position: absolute;
+  border-bottom: 3px solid #ff2f00;
+  width: 0%;
+  z-index: 2;
+  cursor: pointer;
+  transition: 0.2s;
+}
+body .body-wrapper .main-wrapper .containers .show-container .time-line #speed-line-btn {
+  padding: 10px 5px;
+  width: 7%;
+  background-color: aquamarine;
+}
+body .body-wrapper .main-wrapper .containers .settings-container {
+  border-radius: 20px;
+  padding: 30px;
+  -webkit-box-shadow: 2px 6px 22px 2px rgba(255, 255, 255, 0.76);
+  -moz-box-shadow: 2px 6px 22px 2px rgba(255, 255, 255, 0.76);
+  box-shadow: 2px 6px 22px 2px rgba(255, 255, 255, 0.76);
+  border: 2px solid gray;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  position: relative;
+}
+body .body-wrapper .main-wrapper .containers .settings-container .settings-block {
+  display: flex;
+  width: 100%;
+  padding: 30px;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 20px;
+}
+body .body-wrapper .main-wrapper .containers .settings-container .settings-block .input,
+body .body-wrapper .main-wrapper .containers .settings-container .settings-block .selector {
+  width: 170px;
+  padding: 10px;
+  border-radius: 10px;
+  border: none;
+  outline: none;
+  -webkit-box-shadow: 2px 6px 28px 3px rgba(247, 247, 247, 0.76);
+  -moz-box-shadow: 2px 6px 28px 3px rgba(247, 247, 247, 0.76);
+  box-shadow: 2px 6px 28px 3px rgba(247, 247, 247, 0.76);
+}
+body .body-wrapper .main-wrapper .containers .settings-container .settings-block .input-num {
+  width: 130px;
+}
+body .body-wrapper .main-wrapper .containers .settings-container .settings-block #input-top {
+  display: none;
+}
+body .body-wrapper .main-wrapper .containers .settings-container .settings-block #input-left {
+  display: none;
+}
+body .body-wrapper .main-wrapper .containers .settings-container .settings-block #input-zindex {
+  display: none;
+}
+body .body-wrapper .main-wrapper .containers .settings-container .settings-block #input-color {
+  cursor: pointer;
+  border-radius: 10%;
+}
+body .body-wrapper .main-wrapper .containers .settings-container .settings-block #input-transform-x {
+  display: none;
+}
+body .body-wrapper .main-wrapper .containers .settings-container .settings-block #input-transform-y {
+  display: none;
+}
+body .body-wrapper .main-wrapper .containers .settings-container .settings-block .incorrect-input {
+  -webkit-box-shadow: 2px 6px 28px 3px rgba(255, 97, 97, 0.76);
+  -moz-box-shadow: 2px 6px 28px 3px rgba(255, 97, 97, 0.76);
+  box-shadow: 2px 6px 28px 3px rgba(255, 97, 97, 0.76);
+}
+body .body-wrapper .main-wrapper .containers .settings-container .settings-block .correct-input {
+  -webkit-box-shadow: 2px 6px 28px 3px rgba(152, 255, 97, 0.76);
+  -moz-box-shadow: 2px 6px 28px 3px rgba(152, 255, 97, 0.76);
+  box-shadow: 2px 6px 28px 3px rgba(152, 255, 97, 0.76);
+}
+body .body-wrapper .main-wrapper .containers .settings-container .settings-block select {
+  cursor: pointer;
+}
+body .body-wrapper .main-wrapper .containers .settings-container .send-btn {
+  background-color: #d0d0d0;
+}
+body .body-wrapper .main-wrapper .containers .settings-container .clear-btn {
+  background-color: #ff4d4d;
+}

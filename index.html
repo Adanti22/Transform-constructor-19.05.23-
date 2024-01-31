@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link href="https://fonts.googleapis.com/css?family=Bruno+Ace+SC:regular" rel="stylesheet" />
+  <link rel="stylesheet" href="dist/style.css" />
+  <title>Exam C</title>
+</head>
+
+<body>
+  <div class="body-wrapper">
+    <h1 class="title">Animation Constructor</h1>
+    <main class="main-wrapper">
+      <section class="containers">
+        <div class="show-container">
+          <button class=" btn clear-container">Clear</button>
+          <button class=" btn btn-reset">Reset</button>
+
+
+          <h2 class="show-title">
+            Add something to see result
+          </h2>
+
+          <div class="time-line">
+            <img src="img/start.png" class="start-pause-btn" alt="" />
+            <div class="line">
+              <div class="loading-line"></div>
+            </div>
+            <button id="speed-line-btn" class="btn" data-speed="1">x1</button>
+          </div>
+          <div class="show-wrapper">
+          </div>
+        </div>
+        <div class="settings-container">
+
+          <h3 class="subtitle"> Settings</р>
+            <div class="settings-block">
+              <select name="animation-name" id="input-transform" class="selector">
+                <option disabled selected value="null">TRANSFORM</option>
+                <option value="translate">Translate</option>
+                <option value="scale">Scale</option>
+                <option value="rotate">Rotate</option>
+                <option value="skew">Skew</option>
+              </select>
+              <input type="number" placeholder="" id="input-transform-x" class="input">
+              <input type="number" placeholder="" id="input-transform-y" class="input">
+              <input type="number" placeholder="Sizes(px)" min="10" max="1000" id="input-width-height"
+                class="input input-num">
+              <select name="animation-figure" id="input-figure" class="selector">
+                <option disabled selected value="null">FIGURE</option>
+                <option value="square">Square</option>
+                <option value="circle">Circle</option>
+                <option value="triangle">Triangle </option>
+              </select>
+              <select name="position" id="input-position" class="selector">
+                <option disabled selected value="null">POSITION</option>
+                <option value="static">Static</option>
+                <option value="absolute">Absolute</option>
+                <option value="relative">Relative</option>
+                <option value="sticky">Sticky</option>
+                <option value="fixed">Fixed</option>
+              </select>
+              <input type="number" class="input input-num" placeholder="Top(px)" id="input-top">
+              <input type="number" class="input input-num" placeholder="Left(px)" id="input-left">
+              <input type="number" class="input input-num" placeholder="z-index" id="input-zindex">
+              <input type="color" id="input-color">
+            </div>
+            <button class=" btn send-btn">Add</button>
+            <button class=" btn clear-btn">Clear </button>
+
+
+
+        </div>
+      </section>
+    </main>
+  </div>
+  <script src="scripts/main.js"></script>
+</body>
+
+</html>
